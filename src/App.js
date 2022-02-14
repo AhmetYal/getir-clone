@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Campaigns from "./components/Campaigns";
+import Cards from "./components/Cards";
+import Categories from "./components/Categories";
+import Favorities from "./components/Favorities";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import MobileApp from "./components/MobileApp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <HeroSection />
+      <Categories />
+      <Campaigns />
+      <div className="container mx-auto grid gap-y-6 pt-8">
+        <Favorities />
+        <MobileApp />
+        <Cards />
+      </div>
+      <Footer />
+    </>
   );
 }
 
